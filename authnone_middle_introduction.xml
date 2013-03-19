@@ -36,7 +36,7 @@
   </t>
 
   <t>
-    We have found however that not all client implementors have
+    We have found however that not all client implementer have
     adopted this definition of the server behavior and want to
     see an informational ID that describes exactly what sort
     of behavior to expect from the server. I.e., they feel

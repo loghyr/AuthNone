@@ -15,7 +15,7 @@
       <t hangText='Anonymization'>
         The server first ensures all security authentication via the
         incoming request's security flavor and only if accepted does
-        it anonymmize the credentials.
+        it anonymize the credentials.
       </t>
     </list>
   </t>
@@ -35,7 +35,7 @@
     The client can safely assume that the server supports both the
     security flavor it requested and AUTH_NONE. For example, if the
     server was not configured for Kerberos and hence did not have
-    a valid ticket, it would not be able to process the incomming
+    a valid ticket, it would not be able to process the incoming
     kerberized mount request from the client and would have not
     gotten down into the NFS/MOUNT layer to reply to the client
     with the list of security flavors.
