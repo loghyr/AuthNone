@@ -1,0 +1,25 @@
+<!-- Copyright (C) The IETF Trust (2013) -->
+<!-- Copyright (C) The Internet Society (2013) -->
+
+<section anchor="sec:intro" title="Introduction">
+  <t>
+    Mandatory Access Control (MAC) systems have been mainstreamed in
+    modern operating systems such as Linux (R), FreeBSD (R), and Solaris
+    (TM).  MAC systems bind security attributes to
+    subjects (processes) and objects within a system.  These attributes
+    are used with other information in the system to make access control
+    decisions.
+  </t>
+</section>
+
+<section anchor='sec:defs' title='Definitions'>
+  <t>
+    <list style='hanging'>
+      <t hangText='Label Format Specifier (LFS):'>
+      </t>
+
+      <t hangText='Label Format Registry:'>
+      </t>
+    </list>
+  </t>
+</section>

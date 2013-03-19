@@ -1,0 +1,49 @@
+<!-- Copyright (C) The IETF Trust (2013) -->
+<!-- Copyright (C) The Internet Society (2013) -->
+
+<front>
+    <title abbrev="AuthNone">
+      Best Practices for Negotiating AUTH_NONE
+    </title>
+
+    <author fullname="Thomas Haynes"
+            initials="T."
+            surname="Haynes">
+        <organization abbrev="NetApp">NetApp</organization>
+        <address>
+            <postal>
+                <street>495 E Java Drive</street>
+                <city>Sunnyvale</city>
+                <region>CA</region>
+                <code>95054</code>
+                <country>USA</country>
+            </postal>
+            <phone>+1 408 419 3018</phone>
+            <email>thomas@netapp.com</email>
+        </address>
+    </author>
+
+    <date year="YEARVAR" month="MONTHVAR" day="DAYVAR"/>
+
+    <area>Transport</area>
+    <workgroup>NFSv4</workgroup>
+
+    <abstract>
+      <t>
+        This Internet-Draft outlines the best practices for NFS clients
+        to interpret the results of a NFS server returning AUTH_NONE
+        as a security flavor.
+      </t>
+    </abstract>
+
+    <note title="Requirements Language">
+<t>The key words &quot;MUST&quot;, &quot;MUST NOT&quot;,
+&quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;,
+&quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;,
+&quot;MAY&quot;, and &quot;OPTIONAL&quot; in this document are to be
+interpreted as described in <xref target="ref:RFC2119">RFC 2119</xref>.
+</t>
+
+    </note>
+
+</front>
