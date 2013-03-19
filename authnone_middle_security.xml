@@ -41,3 +41,9 @@
     with the list of security flavors.
   </t>
 </section>
+
+<section anchor='sec:iana' title='IANA Considerations'>
+  <t>
+    This document has no actions for IANA.
+  </t>
+</section>

@@ -93,7 +93,7 @@ FRONT_PREGEN = authnone_front.xml
 IDXMLSRC_BASE = \
 	authnone_middle_start.xml \
 	authnone_middle_introduction.xml \
-	authnone_middle_common.xml \
+	authnone_middle_recommendations.xml \
 	authnone_middle_security.xml \
 	authnone_middle_end.xml \
 	authnone_back_front.xml \

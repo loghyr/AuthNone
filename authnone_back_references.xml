@@ -81,22 +81,6 @@ RPC: Remote Procedure Call Protocol specification: Version 2
   </front>
 </reference>
 
-    <reference anchor='RFC2119'>
-      <front>
-	<title abbrev='RFC Key Words'>Key words for use in RFCs to Indicate Requirement Levels</title>
-	<author initials='S.' surname='Bradner' fullname='Scott Bradner'>
-	  <organization>Harvard University</organization>
-	  <address>
-	    <postal>
-	      <street>1350 Mass. Ave.</street>
-	      <street>Cambridge</street>
-	    <street>MA 02138</street></postal>
-	    <phone>- +1 617 495 3864</phone>
-     	<email>sob@harvard.edu</email></address></author>
-     	<date year='1997' month='March' />
-      </front>
-    </reference>
-
 </references>
 
 <!--
