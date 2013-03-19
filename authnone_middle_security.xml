@@ -2,4 +2,42 @@
 <!-- Copyright (C) The Internet Society (2013) -->
 
 <section anchor="sec:security" title="Security Considerations">
+  <t>
+    When describing the server behavior, the language in the various
+    manpages are not clear on the difference between:
+
+    <list style='hanging'>
+      <t hangText='Wild Card'>
+        The server bypasses any security authentication via the
+        incoming request and simply anonymizes the credentials.
+      </t>
+
+      <t hangText='Anonymization'>
+        The server first ensures all security authentication via the
+        incoming request's security flavor and only if accepted does
+        it anonymmize the credentials.
+      </t>
+    </list>
+  </t>
+
+  <t>
+    In practice, the server should apply the authentication method
+    requested by the client and only then anonymize the credentials.
+  </t>
+
+  <t>
+    Another concern would be when the server returns an authentication
+    list which just contains AUTH_NONE. Does that imply that the server
+    supports all possible security flavors?
+  </t>
+
+  <t>
+    The client can safely assume that the server supports both the
+    security flavor it requested and AUTH_NONE. For example, if the
+    server was not configured for Kerberos and hence did not have
+    a valid ticket, it would not be able to process the incomming
+    kerberized mount request from the client and would have not
+    gotten down into the NFS/MOUNT layer to reply to the client
+    with the list of security flavors.
+  </t>
 </section>

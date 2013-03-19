@@ -3,23 +3,45 @@
 
 <section anchor="sec:intro" title="Introduction">
   <t>
-    Mandatory Access Control (MAC) systems have been mainstreamed in
-    modern operating systems such as Linux (R), FreeBSD (R), and Solaris
-    (TM).  MAC systems bind security attributes to
-    subjects (processes) and objects within a system.  These attributes
-    are used with other information in the system to make access control
-    decisions.
-  </t>
-</section>
+    Security flavors for authentication of Network FileSystem (NFS)
+    access are presented in <xref target="RFC1813" />. The extent of
+    the description of AUTH_NONE (also AUTH_NULL in
+    <xref target='RFC1057' />) is:
 
-<section anchor='sec:defs' title='Definitions'>
-  <t>
-    <list style='hanging'>
-      <t hangText='Label Format Specifier (LFS):'>
-      </t>
-
-      <t hangText='Label Format Registry:'>
+    <list>
+      <t>
+        The AUTH_NONE flavor provides null authentication, that
+        is, no authentication information is passed.
       </t>
     </list>
+
+    No guidance is provided for the behavior that many server
+    vendors have implemented for exporting filesystems. Namely,
+    that if the client mount request is with a security flavor
+    that does not match one in the server export list, but the
+    server export list does contain "-sec=none", then
+    accept the mount request with anonymous credentials.
+  </t>
+
+  <t>
+    Before Sun Microsystems, Inc. passed the standards development
+    of NFS to the IETF, vendors seeking compatibility followed
+    <xref target="RFC1813" />, but would also adopt conventions
+    found in the Solaris manpages. And while the both the NFS
+    and MOUNT protocols were standardized in RFC1813, the exporting
+    of filesystems by servers for sharing with clients was not.
+    Hence, the share_nfs(1M) manpages of Solaris 2.6
+    <xref target='S26RM97' /> are the first documentation which
+    describes the behavior of AUTH_NONE when exported by a server.
+  </t>
+
+  <t>
+    We have found however that not all client implementors have
+    adopted this definition of the server behavior and want to
+    see an informational ID that describes exactly what sort
+    of behavior to expect from the server. I.e., they feel
+    that if the server advertises that it supports AUTH_NONE,
+    then that means that the client can only use a mount option
+    of "sec=none" in order to access the exported filesystem.
   </t>
 </section>
